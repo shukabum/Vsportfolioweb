@@ -1,3 +1,4 @@
+https://shukabum.vercel.app/
 hello the project looks like this:
 this website is subjcted to copyright, give the credits if you copy
 
