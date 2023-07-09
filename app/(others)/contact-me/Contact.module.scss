@@ -1,0 +1,209 @@
+.Contact {
+  display: flex;
+  height: 100%;
+
+  section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: auto;
+
+    &:nth-of-type(1) {
+      border-right: 1px solid #1e2d3d;
+    }
+
+    .code {
+      display: table;
+      table-layout: fixed;
+      width: 100%; /* anything but auto, otherwise fixed layout not guaranteed */
+      white-space: pre-wrap;
+
+      &::before {
+        counter-reset: linenum;
+      }
+
+      span.tr {
+        display: table-row;
+        counter-increment: linenum;
+      }
+
+      span.th {
+        /* used for line numbers */
+        display: table-cell;
+        user-select: none;
+        width: 2.5em;
+
+        &::before {
+          content: counter(linenum);
+          text-align: right;
+          display: block;
+        }
+      }
+
+      span.th span.th {
+        width: 4em; /* or whatever the desired width of the numbers column is */
+      }
+
+      code {
+        display: table-cell;
+        color: #8CA5B5;
+        padding-left: 2em !important;
+
+        .or {
+          color: #fea55f;
+        }
+
+        .pr {
+          color: #5565e8;
+        }
+
+        .in {
+          color: #c98bdf;
+        }
+
+        .sy {
+          color: #8CA5B5;
+        }
+      }
+
+      /* Additional styling demo */
+
+      // width: 100%;
+
+      span.th {
+        padding: 3px;
+        padding-top: 0px;
+      }
+
+      span.th::before {
+        font-size: 90%;
+        color: #8CA5B5;
+      }
+
+      span.tr.firstRow span.th {
+        border-top: none;
+      }
+
+      code {
+        padding: 3px;
+      }
+
+      span.e code {
+        background: #f0f8ff;
+      }
+
+      span.th::before {
+        content: counter(linenum) "";
+      }
+    }
+  }
+
+  .fadeIn {
+    transition: opacity 0.2s linear;
+  }
+
+  .fadeOut {
+    transition: opacity 0.2s linear;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  form,
+  .ThankYou {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .ThankYou {
+    color: #8CA5B5;
+    width: 100%;
+    padding: 10.75em 0;
+
+    p {
+      width: 70%;
+      text-align: center;
+      margin: 1em auto;
+    }
+  }
+
+  &Form {
+    width: 100%;
+    max-width: 350px;
+
+    &Block {
+      margin-bottom: 1em;
+
+      label {
+        display: block;
+        color: #8CA5B5;
+        margin-bottom: 0.5em;
+      }
+
+      input,
+      textarea {
+        background-color: #011221;
+        transition: all 0.2s linear;
+        outline: 1px solid transparent;
+        border: 1px solid #1e2d3d;
+        width: 100%;
+        border-radius: 7px;
+        padding: 0.5em 0.75em;
+        font-size: 1em;
+
+        &:focus {
+          // outline: 1px solid #607b96;
+          box-shadow: 0 0 0 1.5pt #607b96;
+          -webkit-box-shadow: 0 0 0 1.5pt #607b96;
+        }
+
+        &::placeholder {
+          color: #465e77;
+        }
+
+        color: #ffffff;
+      }
+    }
+  }
+
+  button {
+    font-size: 1em;
+    outline: none;
+    border: none;
+    background-color: #1c2b3a;
+    color: #ffffff;
+    padding: 0.5em 1em;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 700px) {
+    section {
+      height: auto;
+
+      &:nth-of-type(1) {
+        border: none;
+        height: 100%;
+      }
+
+      &:nth-of-type(2) {
+        display: none;
+      }
+    }
+
+    form {
+      width: 100%;
+    }
+
+    &Form {
+      padding: 4em 0;
+      max-width: 90%;
+    }
+  }
+}
