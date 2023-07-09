@@ -16,7 +16,7 @@ export default function Footer() {
       <div>
         <a
           aria-label="Qudusayo linkedin profile"
-          href="https://www.linkedin.com/in/qudusayo/"
+          href="https://www.linkedin.com/in/shubham-sharma-49b54b248/"
           target="_blank"
           rel="noreferrer"
         >
@@ -26,7 +26,7 @@ export default function Footer() {
       <div>
         <a
           aria-label="Qudusayo twitter profile"
-          href="https://twitter.com/qudusayo"
+          href="https://twitter.com/shush__07"
           target="_blank"
           rel="noreferrer"
         >
@@ -36,7 +36,7 @@ export default function Footer() {
       <div>
         <a
           aria-label="Qudusayo github profile"
-          href="https://github.com/qudusayo/"
+          href="https://github.com/shukabum/"
           target="_blank"
           rel="noreferrer"
         >
@@ -45,16 +45,15 @@ export default function Footer() {
       </div>
       <div>
         <a
-          aria-label="Designed by Yanka Darelova"
-          href="https://dribbble.com/shots/18111356-Portfolio-Concept-V-2"
+          href="#"
           target="_blank"
           rel="noreferrer"
-          title="Designed by Yanka Darelova"
+          
         >
           <span className={styles.githubUsername}>
-            Designed by Yanka Darelova
+            Designed by Shubham Sharma
           </span>
-          <RiDribbbleFill fill="#607B96" size={25} />
+          {/* <RiDribbbleFill fill="#607B96" size={25} /> */}
         </a>
       </div>
     </footer>

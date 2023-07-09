@@ -4,7 +4,7 @@ export default function Head() {
   return (
     <>
       <DefaultTags />
-      <title>Qudusayo - Projects</title>
+      <title>Shubham - Projects</title>
       <meta name="description" content="Check out what I've been working on." />
     </>
   );

@@ -9,7 +9,7 @@ export default function Home() {
         <div className={styles.mainInfo}>
           <div>
             <span className={styles.hi}>Hi all. I am</span>
-            <h1>Qudusayo</h1>
+            <h1>Shubham</h1>
             <h2>&gt; Full-stack developer</h2>
           </div>
 
@@ -23,10 +23,10 @@ export default function Home() {
                 &quot;
                 <a
                   target="_blank"
-                  href="https://github.com/qudusayo"
+                  href="https://github.com/shukabum"
                   rel="noreferrer"
                 >
-                  https://github.com/qudusayo
+                  https://github.com/shukabum
                 </a>
                 &quot;
               </span>

@@ -10,6 +10,9 @@ import {
   SiEthereum,
   SiNodedotjs,
   SiOpensourceinitiative,
+  SiJavascript,
+  SiBlender,
+  SiGithub,
 } from "react-icons/si";
 import Card from "@/components/Card/Card";
 import styles from "./Projects.module.scss";
@@ -50,7 +53,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Qudusayo - Projects</title>
+        <title>Shubham - Projects</title>
         <meta name="description" content="Works from Qudusayo" />
       </Head>
       <div>
@@ -70,7 +73,7 @@ export default function Projects() {
                       name: "HTML5",
                     },
                     {
-                      icon: <SiOpensourceinitiative size={20} />,
+                      icon: <SiGithub size={20} />,
                       name: "Contribution",
                     },
                     {
@@ -86,9 +89,14 @@ export default function Projects() {
                       name: "NodeJs",
                     },
                     {
-                      icon: <SiEthereum size={20} />,
-                      name: "Blockchain",
+                      icon:<SiJavascript size={20}/>,
+                      name: "Javascript",
                     },
+                    {
+                      icon:<SiBlender size={20}/>,
+                      name: "Blender",
+                    },
+
                   ].map((stack, index) => (
                     <div key={index}>
                       <input
@@ -107,7 +115,7 @@ export default function Projects() {
               ]}
             />
           }
-          navTitle={filters.length ? filters.join("; ") : "Projects"}
+          navTitle={filters.length ? filters.join("; ") : "Projects.js"}
           resetEntries={() => setFilters([])}
         >
           <div className={styles.ProjectPreviews}>

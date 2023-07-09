@@ -17,18 +17,19 @@ export default function Contact() {
     message: "",
   });
   const [msgSent, setMsgSent] = useState(false);
-
+  
   const formSubmitHandler = async (e: React.FormEvent) => {
     e.preventDefault();
     let data = {
       ...formEntries,
     };
-
+ 
     let req = await axios({
-      url: `https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_ID}`,
+      url: `https://formspree.io/f/xnqyydng`,
       method: "post",
       headers: {
         Accept: "application/json",
+        "Content-Type": 'application/json'
       },
       data,
     });
@@ -62,7 +63,7 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Qudusayo - Contact</title>
+        <title>Shubham - Contact</title>
         <meta name="description" content="Send Qudusayo a message" />
       </Head>
       <div>
@@ -74,13 +75,13 @@ export default function Contact() {
                 {
                   title: "contacts",
                   content: [
-                    <a key={0} href="mailto:qqudusayo@gmail.com">
+                    <a key={0} href="mailto:s_sharma2@me.iitr.ac.in">
                       <IoMail fill="#607b96" />
-                      <span>qqudusayo@gmail.com</span>
+                      <span>s_sharma2@me.iitr.ac.in</span>
                     </a>,
-                    <a key={1} href="tel:+2347016412041">
+                    <a key={1} href="tel:+919418479698">
                       <IoCall fill="#607b96" />
-                      <span>+(234)701-6412-041</span>
+                      <span>+(91)9418479698</span>
                     </a>,
                   ],
                 },
@@ -89,21 +90,21 @@ export default function Contact() {
                   content: [
                     <a
                       key={0}
-                      href="http://discordapp.com/users/712416046317043762"
+                      href="#"
                       target="_blank"
                       rel="noreferrer"
                     >
                       <IoOpenOutline fill="#607b96" />
-                      <span>Discord Profile</span>
+                      <span>Discord Profile - "shubham717"</span>
                     </a>,
                     <a
                       key={1}
-                      href="https://stackoverflow.com/users/11659301/qudusayo"
+                      href="https://www.instagram.com/shubham_._717/"
                       target="_blank"
                       rel="noreferrer"
                     >
                       <IoOpenOutline fill="#607b96" />
-                      <span>Stackoverflow Profile</span>
+                      <span>Instagram</span>
                     </a>,
                   ],
                 },
@@ -121,19 +122,23 @@ export default function Contact() {
                   <div className={styles.ContactFormBlock}>
                     <label>_name:</label>
                     <input
-                      placeholder="Ayoola Abdulqudus"
+                      placeholder="Shukabum"
+                      type={'name'}
                       name="name"
                       value={formEntries.name}
                       onChange={formEntriesHandler}
+                      required
                     />
                   </div>
                   <div className={styles.ContactFormBlock}>
                     <label>_email:</label>
                     <input
-                      placeholder="qqudusayo@gmail.com"
+                      placeholder="sample@gmail.com"
                       name="email"
                       value={formEntries.email}
                       onChange={formEntriesHandler}
+                      type="email"
+                      required
                     />
                   </div>
                   <div className={styles.ContactFormBlock}>
@@ -144,9 +149,10 @@ export default function Contact() {
                       name="message"
                       value={formEntries.message}
                       onChange={formEntriesHandler}
+                      required
                     ></textarea>
                   </div>
-                  <button>submit-message</button>
+                  <button type="submit">submit-message</button>
                 </div>
               </form>
 

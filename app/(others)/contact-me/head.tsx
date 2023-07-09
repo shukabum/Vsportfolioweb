@@ -4,7 +4,7 @@ export default function Head() {
   return (
     <>
       <DefaultTags />
-      <title>Contact - Qudusayo</title>
+      <title>Contact - Shubham</title>
       <meta
         name="description"
         content="Say hello to me. I'm a full-stack developer."

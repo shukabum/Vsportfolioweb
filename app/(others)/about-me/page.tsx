@@ -17,11 +17,11 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>Qudusayo - About</title>
+        <title>Shubham - About</title>
         <meta name="description" content="About Qudusayo" />
       </Head>
       <div>
-        <BoxLayout sideBar={<FlexSideBar />} navTitle="personal-info">
+        <BoxLayout sideBar={<FlexSideBar />} navTitle="personal-info.js">
           <div className={styles.About}>
             <div className={styles.AboutInfo}>
               <pre className={styles.code}>
@@ -31,11 +31,11 @@ export default function About() {
                 </span>
                 <span className={styles.tr}>
                   <span className={styles.th}></span>
-                  <code>I&apos;m Ayoola Abdulqudus,</code>
+                  <code>I&apos;m Shubham Sharma,</code>
                 </span>
                 <span className={styles.tr}>
                   <span className={styles.th}></span>
-                  <code>a Frontend Developer. Right now </code>
+                  <code>a WEB Developer. Right now </code>
                 </span>
                 <span className={styles.tr}>
                   <span className={styles.th}></span>
@@ -67,11 +67,11 @@ export default function About() {
                 </span>
                 <span className={styles.tr}>
                   <span className={styles.th}></span>
-                  <code>HTML, CSS, Javascript, MongoDB, EVM </code>
+                  <code>HTML, CSS, Javascript, C++, MongoDB, EVM, Blender</code>
                 </span>
                 <span className={styles.tr}>
                   <span className={styles.th}></span>
-                  <code>and some basic back-end (Node). </code>
+                  <code>and some basic back-end (Node, Express). </code>
                 </span>
                 <span className={styles.tr}>
                   <span className={styles.th}></span>
@@ -138,13 +138,13 @@ const FlexSideBar = () => {
             {
               title: "contacts",
               content: [
-                <a key={0} href="mailto:qqudusayo@gmail.com">
+                <a key={0} href="mailto:s_sharma2@me.iitr.ac.in">
                   <IoMail fill="#607b96" />
-                  <span>qqudusayo@gmail.com</span>
+                  <span>s_sharma2@me.iitr.ac.in</span>
                 </a>,
-                <a key={1} href="tel:+2347016412041">
+                <a key={1} href="tel:+919418479698">
                   <IoCall fill="#607b96" />
-                  <span>+(234)701-6412-041</span>
+                  <span>(+91) 9418479698</span>
                 </a>,
               ],
             },
