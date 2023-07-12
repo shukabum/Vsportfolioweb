@@ -40,7 +40,7 @@ const projects: ProjectTypes[] = [
     name: "Dalle-Clone",
     previewLink: "https://github.com/shukabum/Dalleclone",
     mainType: "react",
-    previewImg: "/projects/dalle.png",
+    previewImg: "/projects/Dalle.png",
     category: ["React", "NodeJs", "Javascript"],
     description: "",
     githubUrl: "https://github.com/shukabum/Dalleclone",
