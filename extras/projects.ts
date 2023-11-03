@@ -15,7 +15,7 @@ const projects: ProjectTypes[] = [
     mainType: "typescript",
     previewLink: "",
     previewImg: "/projects/portfolio.png",
-    category: ["Typescript", "NextJs","ReactJs"],
+    category: ["Typescript", "NextJs", "ReactJs"],
     description: "",
     githubUrl: "https://github.com/shukabum/Vsportfolioweb",
   },
@@ -30,11 +30,12 @@ const projects: ProjectTypes[] = [
   },
   {
     name: "Nextech-frontiers",
-    previewLink: "https://www.nextechfrontiers.com/",
+    previewLink: "https://github.com/shukabum/nextech-website",
     mainType: "react",
     previewImg: "/projects/nextech.png",
-    category: ["ReactJs", "Javascript","Contribution"],
+    category: ["ReactJs", "Javascript", "Contribution"],
     description: "",
+    githubUrl: "https://github.com/shukabum/nextech-website",
   },
   {
     name: "Dalle-Clone",
@@ -70,21 +71,36 @@ const projects: ProjectTypes[] = [
     previewImg: "/projects/portfolio2.png",
     category: ["Blender"],
     description: "",
-    githubUrl:
-      "https://github.com/shukabum/Blender",
+    githubUrl: "https://github.com/shukabum/Blender",
   },
-  
+
   {
     name: "Movies-Search",
     previewLink: "https://shukabum.github.io/Movies-Search",
     mainType: "contribution",
     previewImg: "/projects/movies.png",
-    category: ["HTML5","API"],
+    category: ["HTML5", "API"],
     description: "",
-    githubUrl:
-      "https://github.com/shukabum/Movies-Search",
+    githubUrl: "https://github.com/shukabum/Movies-Search",
   },
-  
+  {
+    name: "Travel-Planner-pro",
+    previewLink: "https://travel-planner-pro-alliance.vercel.app/",
+    mainType: "react",
+    previewImg: "/projects/travel.png",
+    category: ["HTML5", "API", "React", "Contribution"],
+    description: "",
+    githubUrl: "https://github.com/me-loser/travel-planner-pro",
+  },
+  {
+    name: "Reslink_Dashboard",
+    previewLink: "",
+    mainType: "react",
+    previewImg: "/projects/eslink.png",
+    category: ["HTML5", "API", "React", "Contribution"],
+    description: "",
+    githubUrl: "https://github.com/shukabum/Reslinkdash",
+  },
 ];
 
 export default projects;
