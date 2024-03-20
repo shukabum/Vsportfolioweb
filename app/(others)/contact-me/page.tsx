@@ -17,19 +17,19 @@ export default function Contact() {
     message: "",
   });
   const [msgSent, setMsgSent] = useState(false);
-  
+
   const formSubmitHandler = async (e: React.FormEvent) => {
     e.preventDefault();
     let data = {
       ...formEntries,
     };
- 
+
     let req = await axios({
       url: `https://formspree.io/f/xnqyydng`,
       method: "post",
       headers: {
         Accept: "application/json",
-        "Content-Type": 'application/json'
+        "Content-Type": "application/json",
       },
       data,
     });
@@ -64,7 +64,7 @@ export default function Contact() {
     <>
       <Head>
         <title>Shubham - Contact</title>
-        <meta name="description" content="Send Qudusayo a message" />
+        <meta name="description" content="Send Shubham a message" />
       </Head>
       <div>
         <BoxLayout
@@ -90,7 +90,7 @@ export default function Contact() {
                   content: [
                     <a
                       key={0}
-                      href="#"
+                      href="https://discordapp.com/users/shubham717"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -99,7 +99,7 @@ export default function Contact() {
                     </a>,
                     <a
                       key={1}
-                      href="https://www.instagram.com/shubham_._717/"
+                      href="https://www.instagram.com/shubham_._1773/"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -123,7 +123,7 @@ export default function Contact() {
                     <label>_name:</label>
                     <input
                       placeholder="Shukabum"
-                      type={'name'}
+                      type={"name"}
                       name="name"
                       value={formEntries.name}
                       onChange={formEntriesHandler}

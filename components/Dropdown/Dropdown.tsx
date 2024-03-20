@@ -2,6 +2,7 @@ import {
   RiFolder3Fill,
   RiArrowRightSLine,
   RiMarkdownFill,
+  RiFile2Fill,
 } from "react-icons/ri";
 import useCollapse from "react-collapsed";
 
@@ -38,9 +39,22 @@ export const Dropdown = ({
       {entries?.length ? (
         <div className={styles.DropdownEntries} {...getCollapseProps()}>
           <ul>
-            {entries?.map((entry) => (
-              <li key={entry}>
-                <RiMarkdownFill /> <span>{entry}</span>
+            {entries?.map((entry, index) => (
+              <li
+                key={entry}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  // textAlign: "center",
+                }}
+              >
+                <span >
+                  <a key={index} href={"/"}>
+                  <RiFile2Fill />{" "}
+                    {entry}
+                  </a>
+                </span>
               </li>
             ))}
           </ul>

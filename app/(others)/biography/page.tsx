@@ -11,17 +11,17 @@ import { Dropdown } from "@/components/Dropdown/Dropdown";
 import Head from "next/head";
 import useCollapse from "react-collapsed";
 import Sidebar from "@/components/Sidebar/Sidebar";
-import styles from "./About.module.scss";
+import styles from "./bio.module.scss";
 
 export default function About() {
   return (
     <>
       <Head>
         <title>Shubham - About</title>
-        <meta name="description" content="About Qudusayo" />
+        <meta name="description" content="About Shubham" />
       </Head>
       <div>
-        <BoxLayout sideBar={<FlexSideBar />} navTitle="personal-info.js">
+        <BoxLayout sideBar={<FlexSideBar />} navTitle="Biography.js">
           <div className={styles.About}>
             <div className={styles.AboutInfo}>
               <pre className={styles.code}>
@@ -34,28 +34,8 @@ export default function About() {
                   <code>I&apos;m Shubham Sharma, a Software Developer.</code>
                 </span>
                 <br />
-                <span className={styles.tr}>
-                  <span className={styles.th}></span>
-                  <code>
-                    I am a proactive and dedicated individual currently pursuing
-                    Bachelors from Indian Institute of Technology Roorkee
-                    (IIT-R),India
-                  </code>
-                </span>
-                <br />
-                <span className={styles.tr}>
-                  <span className={styles.th}></span>
-                  <code>
-                    With a keen interest in technology and a passion for
-                    problem-solving, I have honed my skills in web development,
-                    project management, and technical training.
-                  </code>
-                </span>
-                <br />
-                <span className={styles.tr}>
-                  <span className={styles.th}></span>
-                  <code></code>
-                </span>
+               
+                
               </pre>
             </div>
             <div className={styles.AboutCodePreview}></div>
