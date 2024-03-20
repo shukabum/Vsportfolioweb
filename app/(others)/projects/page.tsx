@@ -101,15 +101,15 @@ export default function Projects() {
                     },
                     {
                       icon:<SiPython size={20}/>,
-                      name: "Blender",
+                      name: "Python",
                     },
                     {
                       icon:<SiRust size={20}/>,
-                      name: "Blender",
+                      name: "Rust",
                     },
                     {
                       icon:<SiCplusplus size={20}/>,
-                      name: "Blender",
+                      name: "C++",
                     },
 
                   ].map((stack, index) => (
