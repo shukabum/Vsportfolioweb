@@ -13,6 +13,9 @@ import {
   SiJavascript,
   SiBlender,
   SiGithub,
+  SiPython,
+  SiRust,
+  SiCplusplus,
 } from "react-icons/si";
 import Card from "@/components/Card/Card";
 import styles from "./Projects.module.scss";
@@ -94,6 +97,18 @@ export default function Projects() {
                     },
                     {
                       icon:<SiBlender size={20}/>,
+                      name: "Blender",
+                    },
+                    {
+                      icon:<SiPython size={20}/>,
+                      name: "Blender",
+                    },
+                    {
+                      icon:<SiRust size={20}/>,
+                      name: "Blender",
+                    },
+                    {
+                      icon:<SiCplusplus size={20}/>,
                       name: "Blender",
                     },
 
