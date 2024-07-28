@@ -17,7 +17,7 @@ const projects: ProjectTypes[] = [
     previewImg: "/projects/mailer.png",
     category: ["React", "HTML5"],
     description: "",
-    githubUrl: "https://github.com/Qudusayo/nft-marketplace",
+    githubUrl: "https://github.com/Shubham/nft-marketplace",
   },
   {
     name: "Nextech-frontiers",

@@ -20,18 +20,15 @@ export default function DefaultTags() {
         sizes="16x16"
         href="/favicon-16x16.png"
       />
-      <meta name="twitter:title" content="Qudusayo" />
+      <meta name="twitter:title" content="Shubham" />
       <meta
         name="twitter:description"
-        content="Hello there, I'm Qudusayo. I'm a full-stack developer."
+        content="Hello there, I'm Shubham. I'm a full-stack developer."
       />
-      <meta
-        name="twitter:image:src"
-        content="/android-chrome-512x512.png"
-      />
-      <meta name="twitter:image:alt" content="Check what Qudusayo is doing" />
-      <meta name="twitter:creator" content="@qudusayo" />
-      <meta name="twitter:site" content="@qudusayo" />
+      <meta name="twitter:image:src" content="/android-chrome-512x512.png" />
+      <meta name="twitter:image:alt" content="Check what Shubham is doing" />
+      <meta name="twitter:creator" content="@Shubham" />
+      <meta name="twitter:site" content="@Shubham" />
     </>
   );
 }

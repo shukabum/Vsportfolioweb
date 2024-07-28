@@ -57,7 +57,7 @@ export default function Projects() {
     <>
       <Head>
         <title>Shubham - Projects</title>
-        <meta name="description" content="Works from Qudusayo" />
+        <meta name="description" content="Works from Shubham" />
       </Head>
       <div>
         <BoxLayout
@@ -92,26 +92,25 @@ export default function Projects() {
                       name: "NodeJs",
                     },
                     {
-                      icon:<SiJavascript size={20}/>,
+                      icon: <SiJavascript size={20} />,
                       name: "Javascript",
                     },
                     {
-                      icon:<SiBlender size={20}/>,
+                      icon: <SiBlender size={20} />,
                       name: "Blender",
                     },
                     {
-                      icon:<SiPython size={20}/>,
+                      icon: <SiPython size={20} />,
                       name: "Python",
                     },
                     {
-                      icon:<SiRust size={20}/>,
+                      icon: <SiRust size={20} />,
                       name: "Rust",
                     },
                     {
-                      icon:<SiCplusplus size={20}/>,
+                      icon: <SiCplusplus size={20} />,
                       name: "C++",
                     },
-
                   ].map((stack, index) => (
                     <div key={index}>
                       <input

@@ -18,7 +18,7 @@ export default function About() {
     <>
       <Head>
         <title>Shubham - About</title>
-        <meta name="description" content="About Qudusayo" />
+        <meta name="description" content="About Shubham" />
       </Head>
       <div>
         <BoxLayout sideBar={<FlexSideBar />} navTitle="personal-info.js">
@@ -47,9 +47,9 @@ export default function About() {
                   <span className={styles.th}></span>
                   <code>
                     With a keen interest in technology and a passion for
-                    problem-solving, I have honed my skills in software development,
-                    machine learning, computer vision, AI,
-                    project management, and technical training.
+                    problem-solving, I have honed my skills in software
+                    development, machine learning, computer vision, AI, project
+                    management, and technical training.
                   </code>
                 </span>
                 <br />

@@ -15,7 +15,7 @@ export default function Footer() {
       </div>
       <div>
         <a
-          aria-label="Qudusayo linkedin profile"
+          aria-label="Shubham linkedin profile"
           href="https://www.linkedin.com/in/shubham-sharma-49b54b248/"
           target="_blank"
           rel="noreferrer"
@@ -25,7 +25,7 @@ export default function Footer() {
       </div>
       <div>
         <a
-          aria-label="Qudusayo twitter profile"
+          aria-label="Shubham twitter profile"
           href="https://twitter.com/shush__07"
           target="_blank"
           rel="noreferrer"
@@ -35,7 +35,7 @@ export default function Footer() {
       </div>
       <div>
         <a
-          aria-label="Qudusayo github profile"
+          aria-label="Shubham github profile"
           href="https://github.com/shukabum/"
           target="_blank"
           rel="noreferrer"
@@ -44,12 +44,7 @@ export default function Footer() {
         </a>
       </div>
       <div>
-        <a
-          href="#"
-          target="_blank"
-          rel="noreferrer"
-          
-        >
+        <a href="#" target="_blank" rel="noreferrer">
           <span className={styles.githubUsername}>
             Designed by Shubham Sharma
           </span>
